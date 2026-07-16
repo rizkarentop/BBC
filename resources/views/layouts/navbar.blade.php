@@ -1,12 +1,16 @@
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+<header
+    id="navbar"
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    
     <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
         <!-- Logo -->
         <a href="{{ route('home') }}" class="flex items-center gap-3">
             {{-- Nanti tinggal ganti dengan logo perusahaan --}}
-            <div class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-700 text-lg font-bold text-white">
-                BBC
-            </div>
+            <img
+                src="{{ asset('images/logo/logo.jpg') }}"
+                alt="BBC Logo"
+                class="h-12 w-auto">
 
             <div>
                 <h1 class="text-lg font-bold text-slate-800">

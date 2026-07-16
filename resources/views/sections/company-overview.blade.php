@@ -1,15 +1,22 @@
 <!-- COMPANY OVERVIEW -->
 <section class="bg-white py-24">
+
+    <div class="absolute -left-40 top-10 h-80 w-80 rounded-full bg-blue-100 blur-3xl opacity-40"></div>
+
+    <div class="absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-indigo-100 blur-3xl opacity-40"></div>
+
     <div class="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
 
         <!-- Image -->
-        <div class="relative">
-            <img
+        <!-- Image -->
+        <div class="group relative overflow-hidden rounded-3xl">
+
+                    <img
                 src="{{ asset('images/company/overview.jpg') }}"
                 alt="PT. Bugak Brawang Cemerlang"
-                class="h-[550px] w-full rounded-3xl object-cover shadow-2xl">
+                class="h-[550px] w-full rounded-3xl object-cover shadow-2xl transition duration-700 group-hover:scale-105"> 
 
-            <div class="absolute -bottom-8 -right-8 rounded-2xl bg-[#252AB8] px-8 py-6 text-white shadow-xl">
+            <div class="absolute -bottom-8 -right-8 rounded-2xl bg-gradient-to-br from-[#252AB8] to-blue-500 px-8 py-6 text-white shadow-2xl">
                 <p class="text-sm uppercase tracking-widest">
                     Established
                 </p>
@@ -47,15 +54,47 @@
                 Indonesia.
             </p>
 
+            <div class="mt-10 grid grid-cols-2 gap-6 md:grid-cols-4">
+
+                <div>
+                    <h3 class="text-3xl font-bold text-[#252AB8]">40+</h3>
+                    <p class="mt-1 text-sm text-slate-500">
+                        Years Experience
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-3xl font-bold text-[#252AB8]">1983</h3>
+                    <p class="mt-1 text-sm text-slate-500">
+                        Established
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-3xl font-bold text-[#252AB8]">ISO</h3>
+                    <p class="mt-1 text-sm text-slate-500">
+                        Certified
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-3xl font-bold text-[#252AB8]">Nationwide</h3>
+                    <p class="mt-1 text-sm text-slate-500">
+                        Project Coverage
+                    </p>
+                </div>
+
+            </div>
+
             <div class="mt-10 flex flex-wrap gap-4">
 
                 <a href="{{ route('about') }}"
-                    class="rounded-xl bg-[#252AB8] px-8 py-4 font-semibold text-white transition hover:bg-[#1B208C]">
+                    class="rounded-xl bg-[#252AB8] px-8 py-4 font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#1B208C] hover:shadow-xl">
                     Learn More
                 </a>
 
                 <a href="{{ route('contact') }}"
-                    class="rounded-xl border border-slate-300 px-8 py-4 font-semibold text-slate-700 transition hover:border-[#252AB8] hover:text-[#252AB8]">
+                    class="rounded-xl border border-slate-300 px-8 py-4 font-semibold text-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-[#252AB8] hover:text-[#252AB8] hover:shadow-lg">
                     Contact Us
                 </a>
 

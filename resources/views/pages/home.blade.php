@@ -14,6 +14,7 @@
 
 @include('sections.certifications')
 
+
 @include('sections.cta')
 
 @endsection
