@@ -6,7 +6,6 @@ return [
     'hero_established_since' => 'Established Since 1983',
     'hero_heading_build' => "Building Indonesia's",
     'hero_heading_span' => 'Infrastructure',
-    'hero_heading_since' => 'Since 1983',
     'hero_description' => 'PT. Bugak Brawang Cemerlang is a national construction company specializing in contractor services, power plant infrastructure, industrial supply, and plantation development with decades of experience and commitment to quality.',
     'hero_badge_contractor' => 'Contractor',
     'hero_badge_power_plant' => 'Power Plant',

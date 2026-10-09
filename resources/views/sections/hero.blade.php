@@ -26,10 +26,6 @@
                     {{ __('home.hero_heading_span') }}
                 </span>
 
-                <span class="block">
-                    {{ __('home.hero_heading_since') }}
-                </span>
-
             </h1>
 
             <p class="mt-5 text-lg leading-7 text-slate-300">

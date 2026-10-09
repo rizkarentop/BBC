@@ -6,7 +6,6 @@ return [
     'hero_established_since' => 'Berdiri Sejak 1983',
     'hero_heading_build' => 'Membangun Infrastruktur',
     'hero_heading_span' => 'Indonesia',
-    'hero_heading_since' => 'Sejak 1983',
     'hero_description' => 'PT. Bugak Brawang Cemerlang adalah perusahaan konstruksi nasional yang mengkhususkan diri pada layanan kontraktor, infrastruktur pembangkit listrik, pengadaan suplai industri, serta pengembangan perkebunan dengan pengalaman puluhan tahun dan komitmen terhadap kualitas.',
     'hero_badge_contractor' => 'Kontraktor',
     'hero_badge_power_plant' => 'Pembangkit Listrik',
