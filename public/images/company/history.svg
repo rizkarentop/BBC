@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="800" height="800">
+  <defs>
+    <linearGradient id="history" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1240"/>
+      <stop offset="100%" stop-color="#1B208C"/>
+    </linearGradient>
+    <pattern id="dots-history" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="rgba(255,255,255,0.10)"/>
+    </pattern>
+    </defs>
+  <rect width="400" height="400" fill="url(#history)"/>
+  <rect width="400" height="400" fill="url(#dots-history)"/>
+  <circle cx="400" cy="0" r="150" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="0" cy="400" r="130" fill="rgba(0,0,0,0.12)"/>
+  <g transform="translate(35,20) scale(1.05)">
+        <g stroke="rgba(255,255,255,0.92)" stroke-width="8" fill="none" stroke-linecap="round">
+            <path d="M70 250 C 120 250, 120 150, 165 150 S 210 90, 260 90"/>
+            <circle cx="70" cy="250" r="10" fill="rgba(255,255,255,0.92)" stroke="none"/>
+            <circle cx="260" cy="90" r="10" fill="rgba(255,255,255,0.92)" stroke="none"/>
+        </g>
+    </g>
+  
+        <text x="40" y="360" font-family="Arial, sans-serif" font-size="22" font-weight="700"
+              fill="rgba(255,255,255,0.85)" letter-spacing="2">OUR JOURNEY</text>
+        
+</svg>

@@ -1,34 +1,32 @@
 <section class="bg-white py-24">
 
-    <div class="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
+    <div class="mx-auto grid max-w-6xl items-center gap-16 px-8 lg:grid-cols-2">
 
         <div>
 
             <span class="text-sm font-semibold uppercase tracking-[0.3em] text-[#252AB8]">
-                Company History
+                {{ __('about.history_kicker') }}
             </span>
 
             <h2 class="mt-4 text-4xl font-bold text-slate-900">
-                More Than Four Decades of Experience
+                {{ __('about.history_title') }}
             </h2>
 
             <p class="mt-6 leading-8 text-slate-600">
-                PT. Bugak Brawang Cemerlang was established on
-                January 8, 1983, in Lhokseumawe, Aceh.
-
-                Since then, the company has grown into a trusted
-                national contractor serving construction,
-                infrastructure, power plant, supplier, and
-                plantation sectors throughout Indonesia.
+                {{ __('about.history_paragraph_1') }}
             </p>
 
             <p class="mt-6 leading-8 text-slate-600">
-                Supported by experienced professionals and a
-                strong commitment to quality, safety, and customer
-                satisfaction, the company continues to deliver
-                reliable engineering solutions for government,
-                state-owned enterprises, and private industries.
+                {{ __('about.history_paragraph_2') }}
             </p>
+
+            <p class="mt-6 leading-8 text-slate-600">
+                {{ __('about.history_paragraph_3') }}
+            </p>
+
+            <blockquote class="mt-8 border-l-4 border-[#252AB8] bg-white py-4 pl-6 italic leading-7 text-slate-700 shadow-sm">
+                "{{ __('about.history_quote') }}"
+            </blockquote>
 
         </div>
 
@@ -36,8 +34,8 @@
 
             <img
                 src="{{ asset('images/company/history.jpg') }}"
-                class="rounded-3xl shadow-xl"
-                alt="History">
+                class="h-[420px] w-full rounded-3xl object-cover shadow-xl"
+                alt="Transmission tower built by PT. Bugak Brawang Cemerlang">
 
         </div>
 

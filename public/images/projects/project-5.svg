@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="800" height="800">
+  <defs>
+    <linearGradient id="project-5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F1240"/>
+      <stop offset="100%" stop-color="#252AB8"/>
+    </linearGradient>
+    <pattern id="dots-project-5" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="rgba(255,255,255,0.10)"/>
+    </pattern>
+    </defs>
+  <rect width="400" height="400" fill="url(#project-5)"/>
+  <rect width="400" height="400" fill="url(#dots-project-5)"/>
+  <circle cx="400" cy="0" r="150" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="0" cy="400" r="130" fill="rgba(0,0,0,0.12)"/>
+  <g transform="translate(35,20) scale(1.05)">
+        <g fill="rgba(255,255,255,0.92)">
+            <circle cx="165" cy="170" r="48"/>
+            <circle cx="165" cy="170" r="22" fill="#1B208C"/>
+            <g>
+            <rect x="158" y="70" width="14" height="36" rx="4" transform="rotate(0 165 170)"/><rect x="158" y="70" width="14" height="36" rx="4" transform="rotate(30 165 170)"/><rect x="158" y="70" width="14" height="36" rx="4" transform="rotate(60 165 170)"/><rect x="158" y="70" width="14" height="36" rx="4" transform="rotate(90 165 170)"/><rect x="158" y="70" width="14" height="36" rx="4" transform="rotate(120 165 170)"/><rect x="158" y="70" width="14" height="36" rx="4" transform="rotate(150 165 170)"/><rect x="158" y="70" width="14" height="36" rx="4" transform="rotate(180 165 170)"/><rect x="158" y="70" width="14" height="36" rx="4" transform="rotate(210 165 170)"/><rect x="158" y="70" width="14" height="36" rx="4" transform="rotate(240 165 170)"/><rect x="158" y="70" width="14" height="36" rx="4" transform="rotate(270 165 170)"/><rect x="158" y="70" width="14" height="36" rx="4" transform="rotate(300 165 170)"/><rect x="158" y="70" width="14" height="36" rx="4" transform="rotate(330 165 170)"/>
+            </g>
+        </g>
+    </g>
+  
+        <text x="40" y="360" font-family="Arial, sans-serif" font-size="22" font-weight="700"
+              fill="rgba(255,255,255,0.85)" letter-spacing="2">MAINTENANCE</text>
+        
+</svg>

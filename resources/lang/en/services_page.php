@@ -1,0 +1,45 @@
+<?php
+return [
+  'page_title' => 'Services',
+  'page_description' => 'Explore the services offered by PT. Bugak Brawang Cemerlang: contractor and civil construction, power plant maintenance, industrial supply, and plantation infrastructure support.',
+  'banner_kicker' => 'What We Do',
+  'banner_title' => 'Our Services',
+  'banner_description' => 'Integrated industrial solutions across construction, power plant infrastructure, industrial supply, and plantation support — delivered with reliable expertise and professional execution.',
+  'card_contractor_tag' => 'Contractor',
+  'card_contractor_title' => 'Civil & Industrial Construction',
+  'card_contractor_desc' => 'We deliver civil, mechanical, structural, and industrial construction services for government institutions, state-owned enterprises, and private industries, executed to strict quality and safety standards.',
+  'card_contractor_points' => [
+    'Civil & structural construction',
+    'Industrial building and facility works',
+    'Mechanical and piping installation',
+    'Project planning and site supervision',
+  ],
+  'card_power_tag' => 'Power Plant',
+  'card_power_title' => 'Power Plant Infrastructure & Maintenance',
+  'card_power_desc' => 'Our team supports power generation and transmission infrastructure with mechanical maintenance, shutdown support, and engineering services that keep critical facilities running reliably.',
+  'card_power_points' => [
+    'Transmission tower & substation support',
+    'Mechanical maintenance and shutdown services',
+    'Engineering and technical support',
+    'Preventive and corrective maintenance',
+  ],
+  'card_plant_tag' => 'Plantation',
+  'card_plant_title' => 'Plantation Infrastructure Support',
+  'card_plant_desc' => 'We provide infrastructure development, maintenance, and operational support to plantation operators, helping ensure smooth and productive estate operations.',
+  'card_plant_points' => [
+    'Estate road & drainage infrastructure',
+    'Facility construction and maintenance',
+    'Operational support services',
+    'Infrastructure rehabilitation',
+  ],
+  'card_supplier_tag' => 'Supplier',
+  'card_supplier_title' => 'Industrial Supply & Equipment',
+  'card_supplier_desc' => 'PT. Bugak Brawang Cemerlang supplies industrial equipment, construction materials, and safety products, supporting clients with reliable procurement and timely delivery.',
+  'card_supplier_points' => [
+    'Construction materials & equipment',
+    'Industrial and safety products (PPE)',
+    'Procurement and logistics support',
+    'Vendor & inventory management',
+  ],
+];
+

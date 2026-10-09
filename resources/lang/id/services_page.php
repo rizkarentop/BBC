@@ -1,0 +1,45 @@
+<?php
+return [
+  'page_title' => 'Layanan',
+  'page_description' => 'Jelajahi layanan PT. Bugak Brawang Cemerlang: kontraktor dan konstruksi sipil, pemeliharaan pembangkit listrik, pengadaan industri, serta dukungan infrastruktur perkebunan.',
+  'banner_kicker' => 'Apa yang Kami Kerjakan',
+  'banner_title' => 'Layanan Kami',
+  'banner_description' => 'Solusi industri terintegrasi di bidang konstruksi, infrastruktur pembangkit listrik, pengadaan suplai industri, dan dukungan perkebunan — dengan keahlian yang andal dan pelaksanaan profesional.',
+  'card_contractor_tag' => 'Kontraktor',
+  'card_contractor_title' => 'Konstruksi Sipil & Industri',
+  'card_contractor_desc' => 'Kami menyediakan layanan konstruksi sipil, mekanikal, struktural, dan industri untuk instansi pemerintah, BUMN, serta industri swasta, dengan standar kualitas dan keselamatan yang ketat.',
+  'card_contractor_points' => [
+    'Konstruksi sipil & struktural',
+    'Pekerjaan bangunan industri dan fasilitas',
+    'Instalasi mekanikal dan perpipaan',
+    'Perencanaan proyek dan supervisi lapangan',
+  ],
+  'card_power_tag' => 'Pembangkit Listrik',
+  'card_power_title' => 'Infrastruktur & Pemeliharaan Pembangkit Listrik',
+  'card_power_desc' => 'Tim kami mendukung infrastruktur pembangkit dan transmisi dengan pemeliharaan mekanikal, dukungan shutdown, serta layanan engineering agar fasilitas kritis tetap beroperasi dengan andal.',
+  'card_power_points' => [
+    'Dukungan menara transmisi & gardu',
+    'Layanan pemeliharaan mekanikal dan shutdown',
+    'Dukungan engineering dan teknis',
+    'Pemeliharaan preventif dan korektif',
+  ],
+  'card_plant_tag' => 'Perkebunan',
+  'card_plant_title' => 'Dukungan Infrastruktur Perkebunan',
+  'card_plant_desc' => 'Kami menyediakan pengembangan infrastruktur, pemeliharaan, dan dukungan operasional untuk operator perkebunan agar operasional kebun berjalan lancar dan produktif.',
+  'card_plant_points' => [
+    'Infrastruktur jalan kebun & drainase',
+    'Pembangunan dan pemeliharaan fasilitas',
+    'Layanan dukungan operasional',
+    'Rehabilitasi infrastruktur',
+  ],
+  'card_supplier_tag' => 'Pemasok',
+  'card_supplier_title' => 'Pengadaan Industri & Peralatan',
+  'card_supplier_desc' => 'PT. Bugak Brawang Cemerlang menyediakan peralatan industri, material konstruksi, dan produk keselamatan, membantu klien dengan pengadaan yang andal dan pengiriman tepat waktu.',
+  'card_supplier_points' => [
+    'Material & peralatan konstruksi',
+    'Produk industri dan keselamatan (APD)',
+    'Dukungan pengadaan dan logistik',
+    'Pengelolaan vendor & inventori',
+  ],
+];
+

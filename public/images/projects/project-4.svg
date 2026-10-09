@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="800" height="800">
+  <defs>
+    <linearGradient id="project-4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B208C"/>
+      <stop offset="100%" stop-color="#4C8DFF"/>
+    </linearGradient>
+    <pattern id="dots-project-4" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="rgba(255,255,255,0.10)"/>
+    </pattern>
+    </defs>
+  <rect width="400" height="400" fill="url(#project-4)"/>
+  <rect width="400" height="400" fill="url(#dots-project-4)"/>
+  <circle cx="400" cy="0" r="150" fill="rgba(255,255,255,0.06)"/>
+  <circle cx="0" cy="400" r="130" fill="rgba(0,0,0,0.12)"/>
+  <g transform="translate(35,20) scale(1.05)">
+        <g stroke="rgba(255,255,255,0.92)" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="165,60 260,105 260,225 165,270 70,225 70,105"/>
+            <polyline points="70,105 165,150 260,105"/>
+            <line x1="165" y1="150" x2="165" y2="270"/>
+        </g>
+    </g>
+  
+        <text x="40" y="360" font-family="Arial, sans-serif" font-size="22" font-weight="700"
+              fill="rgba(255,255,255,0.85)" letter-spacing="2">SUPPLIER</text>
+        
+</svg>

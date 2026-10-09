@@ -1,20 +1,19 @@
 <section class="bg-white py-24">
 
-    <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-6xl px-8">
 
         <div class="mb-16 text-center">
 
             <span class="text-sm font-semibold uppercase tracking-[0.3em] text-[#252AB8]">
-                Our Values
+                {{ __('about.values_kicker') }}
             </span>
 
             <h2 class="mt-4 text-4xl font-bold text-slate-900">
-                Values That Guide Every Project
+                {{ __('about.values_title') }}
             </h2>
 
             <p class="mx-auto mt-5 max-w-3xl text-slate-600">
-                We believe every successful project is built on integrity,
-                professionalism, safety, and continuous improvement.
+                {{ __('about.values_description') }}
             </p>
 
         </div>
@@ -23,23 +22,23 @@
             $values = [
                 [
                     'icon' => 'bi-shield-check',
-                    'title' => 'Integrity',
-                    'description' => 'Honest, transparent, and accountable in every project.'
+                    'title' => __('about.values_1_title'),
+                    'description' => __('about.values_1_desc')
                 ],
                 [
                     'icon' => 'bi-award',
-                    'title' => 'Excellence',
-                    'description' => 'Committed to delivering the highest quality.'
+                    'title' => __('about.values_2_title'),
+                    'description' => __('about.values_2_desc')
                 ],
                 [
                     'icon' => 'bi-cone-striped',
-                    'title' => 'Safety',
-                    'description' => 'Occupational health and safety are our top priorities.'
+                    'title' => __('about.values_3_title'),
+                    'description' => __('about.values_3_desc')
                 ],
                 [
                     'icon' => 'bi-arrow-repeat',
-                    'title' => 'Innovation',
-                    'description' => 'Continuously improving through technology and experience.'
+                    'title' => __('about.values_4_title'),
+                    'description' => __('about.values_4_desc')
                 ],
             ];
         @endphp

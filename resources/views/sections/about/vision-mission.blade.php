@@ -1,66 +1,87 @@
-<section class="bg-slate-50 py-24">
+{{--
+    ================================================================
+    VISION & MISSION — Clean Corporate Layout (White)
+    PT. Bugak Brawang Cemerlang
+    ================================================================
+    White page · one premium white card container · two columns
+    Mission | Vision · blue accents only
+    ================================================================
+--}}
 
-    <div class="mx-auto max-w-7xl px-6">
+<section class="vm-section py-20 lg:py-28 bg-white" id="vision-mission">
 
-        <div class="mb-16 text-center">
+    <div class="mx-auto max-w-6xl px-8">
 
-            <span class="text-sm font-semibold uppercase tracking-[0.3em] text-[#252AB8]">
-                Vision & Mission
+        {{-- Section heading --}}
+        <div class="mx-auto mb-12 max-w-3xl text-center lg:mb-14">
+
+            <span class="vm-reveal inline-block text-sm font-semibold uppercase tracking-[0.3em] text-[#252AB8]">
+                {{ __('about.vm_kicker') }}
             </span>
 
-            <h2 class="mt-4 text-4xl font-bold text-slate-900">
-                Our Direction for the Future
+            <h2 class="vm-reveal mt-3 text-3xl font-bold text-slate-900 lg:text-4xl">
+                {{ __('about.vm_title') }}
             </h2>
 
-        </div>
-
-        <div class="grid gap-8 lg:grid-cols-2">
-
-            <!-- Vision -->
-            <div class="rounded-3xl bg-white p-10 shadow-lg">
-
-                <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#252AB8] text-3xl text-white">
-                    <i class="bi bi-eye-fill"></i>
-                </div>
-
-                <h3 class="mb-4 text-2xl font-bold text-slate-900">
-                    Vision
-                </h3>
-
-                <p class="leading-8 text-slate-600">
-                    To become a trusted national construction company
-                    that consistently delivers quality, safety,
-                    innovation, and sustainable development in every project.
-                </p>
-
-            </div>
-
-            <!-- Mission -->
-            <div class="rounded-3xl bg-white p-10 shadow-lg">
-
-                <div class="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#252AB8] text-3xl text-white">
-                    <i class="bi bi-bullseye"></i>
-                </div>
-
-                <h3 class="mb-4 text-2xl font-bold text-slate-900">
-                    Mission
-                </h3>
-
-                <ul class="space-y-4 text-slate-600">
-
-                    <li>• Deliver quality construction services.</li>
-
-                    <li>• Prioritize occupational health and safety.</li>
-
-                    <li>• Build long-term partnerships with clients.</li>
-
-                    <li>• Continuously improve professionalism and innovation.</li>
-
-                </ul>
-
-            </div>
+            <p class="vm-reveal mx-auto mt-4 max-w-2xl text-base leading-relaxed text-slate-600">
+                A clear direction that drives every project we deliver — from planning to execution.
+            </p>
 
         </div>
+
+        {{-- Premium white card container --}}
+        <div class="vm-container rounded-3xl">
+
+            <div class="vm-grid">
+
+                {{-- MISSION --}}
+                <div class="vm-column vm-reveal">
+
+                    <div class="vm-accent-line" aria-hidden="true"></div>
+
+                    <h3 class="vm-heading">
+                        {{ __('about.vm_mission_title') }}
+                    </h3>
+
+                    <ul class="vm-list space-y-5">
+                        <li class="vm-list-item">
+                            <span class="vm-dot" aria-hidden="true"></span>
+                            <span>Deliver high-quality contractor services.</span>
+                        </li>
+                        <li class="vm-list-item">
+                            <span class="vm-dot" aria-hidden="true"></span>
+                            <span>Provide reliable industrial and plantation supply solutions.</span>
+                        </li>
+                        <li class="vm-list-item">
+                            <span class="vm-dot" aria-hidden="true"></span>
+                            <span>Support sustainable infrastructure development.</span>
+                        </li>
+                        <li class="vm-list-item">
+                            <span class="vm-dot" aria-hidden="true"></span>
+                            <span>Prioritize safety, quality, integrity, and customer satisfaction.</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                {{-- VISION --}}
+                <div class="vm-column vm-reveal">
+
+                    <div class="vm-accent-line" aria-hidden="true"></div>
+
+                    <h3 class="vm-heading">
+                        {{ __('about.vm_vision_title') }}
+                    </h3>
+
+                    <p class="vm-paragraph">
+                        To become a trusted national contractor and supplier company that delivers innovative, reliable, and sustainable solutions.
+                    </p>
+
+                </div>
+
+                </div>{{-- /.vm-grid --}}
+
+        </div>{{-- /.vm-container --}}
 
     </div>
 
