@@ -16,12 +16,9 @@ jobs:
           key: ${{ secrets.HOSTINGER_SSH_KEY }}
           port: ${{ secrets.HOSTINGER_PORT }}
           script: |
-            echo "SSH connection successful"
-            echo "Current user:"
-            whoami
-            echo "Current directory:"
-            pwd
-            echo "Home directory contents:"
-            ls -la ~
-            echo "Checking website folders:"
-            ls -la ~/domains/ 2>/dev/null || echo "domains folder not found at this location"
+            echo "Checking domain folders:"
+            ls -la ~/domains/bugakbrawangcemerlang.com/
+            echo "Checking public_html:"
+            ls -la ~/domains/bugakbrawangcemerlang.com/public_html/
+```
+
