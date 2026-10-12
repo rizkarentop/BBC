@@ -1,0 +1,27 @@
+name: Test Hostinger SSH
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-connection:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test SSH Connection
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          script: |
+            echo "SSH connection successful"
+            echo "Current user:"
+            whoami
+            echo "Current directory:"
+            pwd
+            echo "Home directory contents:"
+            ls -la ~
+            echo "Checking website folders:"
+            ls -la ~/domains/ 2>/dev/null || echo "domains folder not found at this location"
