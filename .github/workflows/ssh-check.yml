@@ -1,0 +1,33 @@
+name: Check Hostinger Paths
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check SSH and Hosting Folders
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          script: |
+            echo "=== HOME DIRECTORY ==="
+            echo "$HOME"
+            pwd
+
+            echo "=== DOMAIN DIRECTORY ==="
+            ls -ld "$HOME/domains/bugakbrawangcemerlang.com" || true
+
+            echo "=== WEBSITE DIRECTORY ==="
+            ls -la "$HOME/domains/bugakbrawangcemerlang.com/public_html" || true
+
+            echo "=== LARAVEL APP DIRECTORY ==="
+            ls -la "$HOME/laravel_app/bugak-brawang-cemerlang" || true
+
+            echo "=== ARTISAN CHECK ==="
+            ls -l "$HOME/laravel_app/bugak-brawang-cemerlang/artisan" || true
