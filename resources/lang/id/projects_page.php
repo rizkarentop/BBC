@@ -33,7 +33,7 @@ return [
         [
             'tag' => 'Transmisi',
             'title' => 'Transmisi 150 kV Tele – Pangururan',
-            'description' => 'Pembangunan saluran transmisi 150 kV yang menghubungkan Tele dan Pangururan.',
+            'description' => '',
             'contract' => '020.PJ.2011/131/INKTRING SUAR/2011',
             'period' => 'Des 2011 – Des 2020',
             'image' => '',

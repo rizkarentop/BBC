@@ -33,7 +33,7 @@ return [
         [
             'tag' => 'Transmission',
             'title' => 'Transmisi 150 kV Tele – Pangururan',
-            'description' => 'Construction of the 150 kV transmission line connecting Tele and Pangururan.',
+            'description' => '',
             'contract' => '020.PJ.2011/131/INKTRING SUAR/2011',
             'period' => 'Dec 2011 – Dec 2020',
             'image' => '',
