@@ -25,15 +25,15 @@
                 <div class="relative h-72 lg:h-full">
                     <img
                         src="{{ asset('images/projects_real/current-project.jpg') }}"
-                        alt="Transmission tower restoration work in progress"
+                        alt="Completed transmission tower restoration project"
                         class="h-full w-full object-cover">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent lg:bg-gradient-to-r"></div>
                 </div>
 
                 <div class="flex flex-col justify-center p-10 lg:p-14">
 
-                    <span class="inline-flex w-fit items-center gap-2 rounded-full bg-[#252AB8]/10 px-4 py-1.5 text-sm font-semibold text-[#252AB8]">
-                        <span class="h-2 w-2 animate-pulse rounded-full bg-[#252AB8]"></span>
+                    <span class="inline-flex w-fit items-center gap-2 rounded-full bg-emerald-100 px-4 py-1.5 text-sm font-semibold text-emerald-700">
+                        <span class="h-2 w-2 rounded-full bg-emerald-600"></span>
                         {{ __('home.current_project_badge') }}
                     </span>
 
@@ -48,7 +48,11 @@
                     <dl class="mt-6 grid gap-4 text-sm text-slate-600 sm:grid-cols-2">
                         <div>
                             <dt class="text-slate-500">{{ __('home.current_project_spmk_label') }}</dt>
-                            <dd class="font-medium text-slate-900">0694/TRS.01.03/F36000000/2026</dd>
+                            <dd class="font-medium text-slate-900">013.PJ.PLN2026/DAN.01.03/F36000000/2026</dd>
+                        </div>
+                        <div>
+                            <dt class="text-slate-500">{{ __('home.current_project_contract_date_label') }}</dt>
+                            <dd class="font-medium text-slate-900">{{ __('home.current_project_contract_date_value') }}</dd>
                         </div>
                         <div>
                             <dt class="text-slate-500">{{ __('home.current_project_started_label') }}</dt>
@@ -59,11 +63,11 @@
                     <div class="mt-8">
                         <div class="mb-2 flex items-center justify-between text-sm font-medium text-slate-600">
                             <span>{{ __('home.current_project_progress_label') }}</span>
-                            <span class="text-slate-900">80%</span>
+                            <span class="text-slate-900">100%</span>
                         </div>
 
                         <div class="h-3 w-full overflow-hidden rounded-full bg-slate-100">
-                            <div class="h-full rounded-full bg-gradient-to-r from-[#252AB8] to-blue-500" style="width: 80%"></div>
+                            <div class="h-full rounded-full bg-gradient-to-r from-[#252AB8] to-blue-500" style="width: 100%"></div>
                         </div>
                     </div>
 

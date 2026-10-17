@@ -148,6 +148,9 @@
 
                         <div class="mt-3 space-y-1 border-t border-slate-100 pt-3 text-xs text-slate-500">
                             <p><span class="font-medium text-slate-600">{{ __('projects_page.contract_label') }}</span> {{ $project['contract'] }}</p>
+                            @if (!empty($project['contract_date']))
+                            <p><span class="font-medium text-slate-600">{{ __('projects_page.contract_date_label') }}</span> {{ $project['contract_date'] }}</p>
+                            @endif
                             <p><span class="font-medium text-slate-600">{{ __('projects_page.period_label') }}</span> {{ $project['period'] }}</p>
                         </div>
                     </div>
