@@ -26,7 +26,7 @@ jobs:
       - name: Build assets
         run: npm run build
 
-      - name: Prepare hosting directories
+      - name: Verify hosting directories
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.HOSTINGER_HOST }}
@@ -35,20 +35,14 @@ jobs:
           port: ${{ secrets.HOSTINGER_PORT }}
           script: |
             set -e
-            APP="$HOME/laravel_app/bugak-brawang-cemerlang"
-            WEB="$HOME/domains/bugakbrawangcemerlang.com/public_html"
+            APP="$HOME/domains/bugakbrawangcemerlang.com/public_html"
 
             test -f "$APP/artisan"
-            test -f "$APP/.env"
-            test -f "$WEB/index.php"
+            test -f "$APP/index.php"
+            test -d "$APP/resources/views"
+            test -d "$APP/resources/lang"
 
-            mkdir -p "$APP/resources/lang/en"
-            mkdir -p "$APP/resources/lang/id"
-            mkdir -p "$APP/resources/views/pages"
-            mkdir -p "$APP/resources/views/sections"
-            mkdir -p "$WEB/build"
-
-            echo "Hosting paths verified."
+            echo "Laravel project directory verified."
 
       - name: Deploy English translations
         uses: appleboy/scp-action@v0.1.7
@@ -58,8 +52,8 @@ jobs:
           key: ${{ secrets.HOSTINGER_SSH_KEY }}
           port: ${{ secrets.HOSTINGER_PORT }}
           source: "resources/lang/en/home.php,resources/lang/en/projects_page.php"
-          target: "laravel_app/bugak-brawang-cemerlang/"
-          strip_components: 2
+          target: "domains/bugakbrawangcemerlang.com/public_html/resources/lang/en/"
+          strip_components: 3
           overwrite: true
 
       - name: Deploy Indonesian translations
@@ -70,8 +64,8 @@ jobs:
           key: ${{ secrets.HOSTINGER_SSH_KEY }}
           port: ${{ secrets.HOSTINGER_PORT }}
           source: "resources/lang/id/home.php,resources/lang/id/projects_page.php"
-          target: "laravel_app/bugak-brawang-cemerlang/"
-          strip_components: 2
+          target: "domains/bugakbrawangcemerlang.com/public_html/resources/lang/id/"
+          strip_components: 3
           overwrite: true
 
       - name: Deploy Projects page
@@ -81,8 +75,20 @@ jobs:
           username: ${{ secrets.HOSTINGER_USER }}
           key: ${{ secrets.HOSTINGER_SSH_KEY }}
           port: ${{ secrets.HOSTINGER_PORT }}
-          source: "resources/views/pages/projects.blade.php,resources/views/sections/current-project.blade.php"
-          target: "laravel_app/bugak-brawang-cemerlang/"
+          source: "resources/views/pages/projects.blade.php"
+          target: "domains/bugakbrawangcemerlang.com/public_html/resources/views/pages/"
+          strip_components: 3
+          overwrite: true
+
+      - name: Deploy Current Project section
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          source: "resources/views/sections/current-project.blade.php"
+          target: "domains/bugakbrawangcemerlang.com/public_html/resources/views/sections/"
           strip_components: 3
           overwrite: true
 
@@ -106,5 +112,5 @@ jobs:
           key: ${{ secrets.HOSTINGER_SSH_KEY }}
           port: ${{ secrets.HOSTINGER_PORT }}
           script: |
-            cd "$HOME/laravel_app/bugak-brawang-cemerlang"
+            cd "$HOME/domains/bugakbrawangcemerlang.com/public_html"
             php artisan view:clear
