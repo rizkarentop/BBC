@@ -27,3 +27,8 @@ jobs:
             ls -la "$HOME/laravel_app/bugak-brawang-cemerlang" || true
             echo "=== ARTISAN CHECK ==="
             ls -l "$HOME/laravel_app/bugak-brawang-cemerlang/artisan" || true
+
+            echo "=== BUILD DIRECTORY ==="
+            ls -la "$HOME/domains/bugakbrawangcemerlang.com/public_html/public/build" || true
+            echo "=== ROOT BUILD DIRECTORY ==="
+            ls -la "$HOME/domains/bugakbrawangcemerlang.com/public_html/build" || true
