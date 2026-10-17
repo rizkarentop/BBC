@@ -1,14 +1,14 @@
-name: Test Hostinger SSH
+name: Check Hostinger Paths
 
 on:
   workflow_dispatch:
 
 jobs:
-  test-connection:
+  check:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Test SSH Connection
+      - name: Check SSH and Hosting Folders
         uses: appleboy/ssh-action@v1.2.0
         with:
           host: ${{ secrets.HOSTINGER_HOST }}
@@ -16,9 +16,14 @@ jobs:
           key: ${{ secrets.HOSTINGER_SSH_KEY }}
           port: ${{ secrets.HOSTINGER_PORT }}
           script: |
-            echo "Checking domain folders:"
-            ls -la ~/domains/bugakbrawangcemerlang.com/
-            echo "Checking public_html:"
-            ls -la ~/domains/bugakbrawangcemerlang.com/public_html/
-```
-
+            echo "=== HOME DIRECTORY ==="
+            echo "$HOME"
+            pwd
+            echo "=== DOMAIN DIRECTORY ==="
+            ls -ld "$HOME/domains/bugakbrawangcemerlang.com" || true
+            echo "=== WEBSITE DIRECTORY ==="
+            ls -la "$HOME/domains/bugakbrawangcemerlang.com/public_html" || true
+            echo "=== LARAVEL APP DIRECTORY ==="
+            ls -la "$HOME/laravel_app/bugak-brawang-cemerlang" || true
+            echo "=== ARTISAN CHECK ==="
+            ls -l "$HOME/laravel_app/bugak-brawang-cemerlang/artisan" || true
