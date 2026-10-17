@@ -1,0 +1,110 @@
+name: Deploy BBC Website
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build assets
+        run: npm run build
+
+      - name: Prepare hosting directories
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          script: |
+            set -e
+            APP="$HOME/laravel_app/bugak-brawang-cemerlang"
+            WEB="$HOME/domains/bugakbrawangcemerlang.com/public_html"
+
+            test -f "$APP/artisan"
+            test -f "$APP/.env"
+            test -f "$WEB/index.php"
+
+            mkdir -p "$APP/resources/lang/en"
+            mkdir -p "$APP/resources/lang/id"
+            mkdir -p "$APP/resources/views/pages"
+            mkdir -p "$APP/resources/views/sections"
+            mkdir -p "$WEB/build"
+
+            echo "Hosting paths verified."
+
+      - name: Deploy English translations
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          source: "resources/lang/en/home.php,resources/lang/en/projects_page.php"
+          target: "laravel_app/bugak-brawang-cemerlang/"
+          strip_components: 2
+          overwrite: true
+
+      - name: Deploy Indonesian translations
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          source: "resources/lang/id/home.php,resources/lang/id/projects_page.php"
+          target: "laravel_app/bugak-brawang-cemerlang/"
+          strip_components: 2
+          overwrite: true
+
+      - name: Deploy Projects page
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          source: "resources/views/pages/projects.blade.php,resources/views/sections/current-project.blade.php"
+          target: "laravel_app/bugak-brawang-cemerlang/"
+          strip_components: 3
+          overwrite: true
+
+      - name: Deploy built assets
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          source: "public/build/**"
+          target: "domains/bugakbrawangcemerlang.com/public_html/"
+          strip_components: 1
+          overwrite: true
+
+      - name: Clear compiled Laravel views
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          script: |
+            cd "$HOME/laravel_app/bugak-brawang-cemerlang"
+            php artisan view:clear
