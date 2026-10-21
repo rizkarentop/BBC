@@ -114,7 +114,7 @@ return [
             'tag' => 'Transmisi',
             'title' => 'Pekerjaan Keadaan Darurat (Emergency) T/L 150 kV Pangkalan Brandan – Langsa Pasca-Bencana Hidrometeorologi di Wilayah Provinsi Aceh & Sumatera Utara (Lingkup Pekerjaan Sipil)',
             'contract' => '013.PJ.PLN2026/DAN.01.03/F36000000/2026',
-            'period' => 'Feb 2026 – Selesai',
+            'period' => 'Feb 2026 – 31 Juli 2026',
             'image' => 'images/projects_real/current-project.jpg',
         ],
     ],
