@@ -10,11 +10,11 @@ return [
             'description' => 'Company leadership visiting the PLN Unit Induk Pembangunan Sumatera Bagian Utara office.',
         ],
         [
-            'title' => 'Contract Signing — PLTA Kumbih-3',
+            'title' => 'Contract Signing — Pembangunan PLTA Kumbih-3 (3×15 MW) LOT 1A (Pembangunan Prasarana Basecamp)',
             'description' => 'Signing the contract for basecamp infrastructure construction at the Kumbih-3 hydroelectric power plant.',
         ],
         [
-            'title' => 'Contract Signing — Access Road PLTA Asahan 3',
+            'title' => 'Contract Signing — Pekerjaan Perbaikan Access Road PLTA Asahan 3',
             'description' => 'Signing the contract for access road repair works serving the Asahan 3 hydroelectric power plant.',
         ],
         [

@@ -56,9 +56,9 @@ return [
 
     'leadership_1_title' => 'Pertemuan dengan PT PLN (Persero) UIP Sumbagut',
     'leadership_1_desc' => 'Jajaran pimpinan perusahaan mengunjungi kantor PLN Unit Induk Pembangunan Sumatera Bagian Utara.',
-    'leadership_2_title' => 'Penandatanganan Kontrak — PLTA Kumbih-3',
+    'leadership_2_title' => 'Penandatanganan Kontrak — Pembangunan PLTA Kumbih-3 (3×15 MW) LOT 1A (Pembangunan Prasarana Basecamp)',
     'leadership_2_desc' => 'Penandatanganan kontrak pembangunan infrastruktur basecamp pada PLTA Kumbih-3.',
-    'leadership_3_title' => 'Penandatanganan Kontrak — Jalan Akses PLTA Asahan 3',
+    'leadership_3_title' => 'Penandatanganan Kontrak — Pekerjaan Perbaikan Access Road PLTA Asahan 3',
     'leadership_3_desc' => 'Penandatanganan kontrak perbaikan jalan akses yang melayani PLTA Asahan 3.',
     'leadership_4_title' => 'Apresiasi dari PLN UIP Sumbagut',
     'leadership_4_desc' => 'Menerima apresiasi atas keberhasilan energize saluran transmisi 275 kV Sigli – Ulee Kareng dan GITET Ulee Kareng.',

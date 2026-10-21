@@ -3,7 +3,7 @@
 return [
     'section_kicker' => 'Project Experience',
     'section_title' => 'Track Record of Delivered Works',
-    'section_description' => 'A selection of transmission line, substation, and hydropower infrastructure projects completed for PT PLN (Persero) since 2011.',
+    'section_description' => 'A selection of transmission line, substation, and hydropower infrastructure projects completed for PT PLN (Persero) since 2008.',
 'contract_label' => 'Contract:',
     'contract_date_label' => 'Contract Date:',
     'period_label' => 'Period:',
@@ -16,7 +16,7 @@ return [
     'items' => [
         [
             'tag' => 'Transmission',
-            'title' => 'Procurement & Installation of Tower and Tower Foundation – 275 kV Meulaboh–Sigli',
+            'title' => 'Pekerjaan Pengadaan dan Pemasangan Tower dan Pondasi Tower (Seksi-B) T/L 275 kV Meulaboh – Sigli, 208 Km, 2CCT, Twin Zebra',
             'description' => 'Procurement and installation of transmission towers and tower foundations for the 275 kV Meulaboh–Sigli transmission line (Section B), including towers #208, #209, ZCCT, and Twin Zebra conductor works in Aceh Barat.',
             'contract' => '021.PJ.PLN2008/131/PIKITRING SUAR/2008',
             'period' => 'Aug 2008 – Jun 2012',
@@ -24,7 +24,7 @@ return [
         ],
         [
             'tag' => 'Power Plant',
-            'title' => 'GI 150 kV Meulaboh – PLTU Meulaboh Ext.',
+            'title' => 'Pekerjaan Pembangunan Gardu Induk 150 kV Meulaboh (1×30 MVA) dan PLTU Meulaboh (Ext)',
             'description' => 'Construction of the 150 kV Meulaboh substation, extending the Meulaboh steam power plant network.',
             'contract' => '004.PJ.2011/133/INKTRING SUAR/2011',
             'period' => 'Dec 2011 – Jan 2020',
@@ -32,7 +32,7 @@ return [
         ],
         [
             'tag' => 'Transmission',
-            'title' => 'Transmisi 150 kV Tele – Pangururan',
+            'title' => 'Pekerjaan Pembangunan Transmisi 150 kV Tele – Pangururan',
             'description' => '',
             'contract' => '020.PJ.2011/131/INKTRING SUAR/2011',
             'period' => 'Dec 2011 – Dec 2020',
@@ -40,7 +40,7 @@ return [
         ],
         [
             'tag' => 'Transmission',
-            'title' => 'Transmisi 150 kV Meulaboh – Blang Pidie (Section 1)',
+            'title' => 'Pekerjaan Pembangunan Transmisi 150 kV Meulaboh – Blang Pidie, 82,09 Km, 2 CCT, ACSR 1×240/20 MM2 (Section 1)',
             'description' => 'Construction of Section 1 of the 150 kV Meulaboh–Blang Pidie transmission line.',
             'contract' => '030.PJ.2011/131/INKTRING SUAR/2011',
             'period' => 'Dec 2011 – Jan 2021',
@@ -48,7 +48,7 @@ return [
         ],
         [
             'tag' => 'Substation',
-            'title' => 'TL 150 kV Ulee Kareng – Krueng Raya (Section 1) & GI Krueng Raya 30 MVA',
+            'title' => 'Pekerjaan Pembangunan T/L 150 kV Ulee Kareng – Krueng Raya (Section 1) dan GI 150 kV Krueng Raya 30 MVA',
             'description' => 'Transmission line construction plus a new 30 MVA substation at Krueng Raya.',
             'contract' => '085.PJ.PLN2017/DAN.02.02/UIP II/2017',
             'period' => 'Jun 2017 – Sep 2021',
@@ -56,7 +56,7 @@ return [
         ],
         [
             'tag' => 'Substation',
-            'title' => 'TL 150 kV Ulee Kareng – Krueng Raya (Section 2) & GI Ulee Kareng Ext.',
+            'title' => 'Pekerjaan Pembangunan T/L 150 kV Ulee Kareng – Krueng Raya (Section 2) dan GI 150 kV Ulee Kareng Ext',
             'description' => 'Section 2 transmission works and extension of the Ulee Kareng substation.',
             'contract' => '086.PJ.PLN2017/DAN.02.02/UIP II/2017',
             'period' => 'Jun 2017 – Sep 2021',
@@ -64,7 +64,7 @@ return [
         ],
         [
             'tag' => 'Substation',
-            'title' => 'TL 150 kV Blang Pidie – Tapak Tuan (Section 1) & GI Tapak Tuan 30 MVA',
+            'title' => 'Pekerjaan Pembangunan T/L 150 kV Blang Pidie – Tapak Tuan (Section 1) dan GI 150 kV Tapak Tuan 30 MVA',
             'description' => 'Transmission line construction and a new 30 MVA substation at Tapak Tuan.',
             'contract' => '087.PJ.PLN2017/DAN.02.02/UIP II/2017',
             'period' => 'Jun 2017 – Mar 2024',
@@ -72,7 +72,7 @@ return [
         ],
         [
             'tag' => 'Substation',
-            'title' => 'Sipil GITET 275 kV Ulee Kareng',
+            'title' => 'Pekerjaan Sipil GITET 275 kV Ulee Kareng',
             'description' => 'Civil construction works for the 275 kV Ulee Kareng extra-high voltage substation.',
             'contract' => '122.PJ.PLN2017/DAN.02.02/UIP II/2017',
             'period' => 'Jul 2017 – Feb 2022',
@@ -80,7 +80,7 @@ return [
         ],
         [
             'tag' => 'Transmission',
-            'title' => 'TL 275 kV Sigli – Ulee Kareng (Section 1)',
+            'title' => 'Pembangunan T/L 275 kV Sigli – Ulee Kareng, 2CCT, 2 Zebra (Section 1)',
             'description' => 'Section 1 of the 275 kV extra-high voltage transmission line from Sigli to Ulee Kareng — tower erection, foundation, and welding works.',
             'contract' => '266.PJ.PLN2017/DAN.02.02/UIP SBU/2017',
             'period' => 'Dec 2017 – Mar 2024',
@@ -88,7 +88,7 @@ return [
         ],
         [
             'tag' => 'Transmission',
-            'title' => 'TL 275 kV Sigli – Ulee Kareng (Section 2)',
+            'title' => 'Pembangunan T/L 275 kV Sigli – Ulee Kareng, 2CCT, 2 Zebra (Section 2)',
             'description' => 'Section 2 of the 275 kV extra-high voltage transmission line — conductor stringing across Pidie Regency.',
             'contract' => '267.PJ.PLN2017/DAN.02.02/UIP SBU/2017',
             'period' => 'Dec 2017 – Mar 2024',
@@ -96,7 +96,7 @@ return [
         ],
         [
             'tag' => 'Transmission',
-            'title' => 'TL 275 kV Sigli – Ulee Kareng (Section 3)',
+            'title' => 'Pembangunan T/L 275 kV Sigli – Ulee Kareng, 2CCT, 2 Zebra (Section 3)',
             'description' => 'Section 3 of the 275 kV extra-high voltage transmission line — steel tower welding and assembly.',
             'contract' => '268.PJ.PLN2017/DAN.02.02/UIP SBU/2017',
             'period' => 'Dec 2017 – Mar 2024',
@@ -104,7 +104,7 @@ return [
         ],
         [
             'tag' => 'Hydropower',
-            'title' => 'PLTA Kumbih-3 (3×15 MW) LOT 1A — Basecamp Infrastructure',
+            'title' => 'Pembangunan PLTA Kumbih-3 (3×15 MW) LOT 1A (Pembangunan Prasarana Basecamp)',
             'description' => 'Construction of basecamp infrastructure supporting the Kumbih-3 hydroelectric power plant.',
             'contract' => '008.PJ.PLN2022/DAN.01.02/C37000000/2022',
             'period' => 'Dec 2022 – Feb 2025',
@@ -112,7 +112,7 @@ return [
         ],
 [
             'tag' => 'Hydropower',
-            'title' => 'Access Road Repair — PLTA Asahan 3',
+            'title' => 'Pekerjaan Perbaikan Access Road PLTA Asahan 3',
             'description' => 'Rehabilitation of access roads serving the Asahan 3 hydroelectric power plant.',
             'contract' => '003.PJ.PLN2024/DAN.01.02/F37000000/2024',
             'period' => 'Aug 2024 – Feb 2026',
@@ -120,8 +120,8 @@ return [
         ],
         [
             'tag' => 'Transmission',
-            'title' => 'Emergency Restoration T/L 150 kV Pangkalan Brandan – Langsa',
-            'description' => 'Post-disaster (hydrometeorological) emergency works for PT PLN (Persero), restoring critical 150 kV transmission infrastructure across the Province of Aceh.',
+            'title' => 'Pekerjaan Keadaan Darurat (Emergency) T/L 150 kV Pangkalan Brandan – Langsa Pasca-Bencana Hidrometeorologi di Wilayah Provinsi Aceh & Sumatera Utara (Lingkup Pekerjaan Sipil)',
+            'description' => 'Post-hydrometeorological-disaster emergency works for PT PLN (Persero) in Aceh and North Sumatra provinces, covering the civil works scope.',
             'contract' => '013.PJ.PLN2026/DAN.01.03/F36000000/2026',
             'contract_date' => '24 August 2026',
             'period' => 'Feb 2026 – Completed',
