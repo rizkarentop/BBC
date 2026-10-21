@@ -125,8 +125,7 @@
                     </div>
                 @endif
 
-                <form method="POST" action="{{ route('contact.store') }}" class="mt-8 space-y-5">
-                    @csrf
+                <form id="contact-form" method="POST" action="mailto:bugak_brawang@yahoo.co.id" enctype="text/plain" class="mt-8 space-y-5">
 
                     <div class="grid gap-5 sm:grid-cols-2">
                         <div>
@@ -203,3 +202,23 @@
 </section>
 
 @endsection
+
+@push('scripts')
+<script>
+    document.getElementById('contact-form')?.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(event.currentTarget);
+        const subject = formData.get('subject');
+        const body = [
+            `Nama: ${formData.get('name')}`,
+            `Email: ${formData.get('email')}`,
+            `Telepon: ${formData.get('phone') || '-'}`,
+            '',
+            formData.get('message'),
+        ].join('\n');
+
+        window.location.href = `mailto:bugak_brawang@yahoo.co.id?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    });
+</script>
+@endpush

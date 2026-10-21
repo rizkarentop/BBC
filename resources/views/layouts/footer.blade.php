@@ -17,7 +17,7 @@
                 </p>
 
                 <div class="mt-6 flex items-center gap-3">
-                    <a href="mailto:bugak_brawang@yahoo.co.id"
+                    <a href="{{ route('contact') }}#contact-form"
                        aria-label="{{ __('footer.email_us') }}"
                        class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition hover:bg-[#252AB8]">
                         <i class="bi bi-envelope-fill"></i>
