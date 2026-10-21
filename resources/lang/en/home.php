@@ -43,7 +43,7 @@ return [
 
 // Current Project section
     'current_project_title' => 'Pekerjaan Keadaan Darurat (Emergency) T/L 150 kV Pangkalan Brandan – Langsa Pasca-Bencana Hidrometeorologi di Wilayah Provinsi Aceh & Sumatera Utara (Lingkup Pekerjaan Sipil)',
-    'current_project_period_value' => 'Feb 2026 – Completed',
+    'current_project_period_value' => 'Feb 2026 – 31 July 2026',
 
     // Why Choose Us section
     'why_kicker' => 'Why Choose Us',

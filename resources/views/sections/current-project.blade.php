@@ -20,12 +20,12 @@
                         {{ __('home.current_project_title') }}
                     </h2>
 
-                    <dl class="mt-6 grid gap-4 text-sm text-slate-600 sm:grid-cols-2">
-                        <div>
+                    <dl class="mt-6 grid gap-4 text-sm text-slate-600">
+                        <div class="min-w-0">
                             <dt class="text-slate-500">{{ __('projects_page.contract_label') }}</dt>
-                            <dd class="font-medium text-slate-900">013.PJ.PLN2026/DAN.01.03/F36000000/2026</dd>
+                            <dd class="break-words font-medium text-slate-900">013.PJ.PLN2026/DAN.01.03/F36000000/2026</dd>
                         </div>
-                        <div>
+                        <div class="min-w-0">
                             <dt class="text-slate-500">{{ __('projects_page.period_label') }}</dt>
                             <dd class="font-medium text-slate-900">{{ __('home.current_project_period_value') }}</dd>
                         </div>
