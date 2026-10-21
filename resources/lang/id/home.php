@@ -42,18 +42,8 @@ return [
     'overview_button_contact_us' => 'Hubungi Kami',
 
 // Current Project section
-    'current_project_kicker' => 'Proyek Selesai',
-    'current_project_heading' => 'Pekerjaan yang Telah Kami Selesaikan untuk Menjaga Jaringan Tetap Beroperasi',
-    'current_project_heading_description' => 'Proyek pemulihan infrastruktur transmisi yang telah kami selesaikan untuk PT PLN (Persero), mencerminkan komitmen kami terhadap kualitas dan ketepatan waktu.',
-    'current_project_badge' => 'Proyek Selesai',
     'current_project_title' => 'Pekerjaan Keadaan Darurat (Emergency) T/L 150 kV Pangkalan Brandan – Langsa Pasca-Bencana Hidrometeorologi di Wilayah Provinsi Aceh & Sumatera Utara (Lingkup Pekerjaan Sipil)',
-    'current_project_description' => 'Pekerjaan keadaan darurat pasca-bencana hidrometeorologi untuk PT PLN (Persero) di wilayah Provinsi Aceh dan Sumatera Utara, dengan lingkup pekerjaan sipil.',
-    'current_project_spmk_label' => 'No. Kontrak',
-    'current_project_contract_date_label' => 'Tanggal Kontrak',
-    'current_project_contract_date_value' => '24 Agustus 2026',
-    'current_project_started_label' => 'Dimulai',
-    'current_project_started_value' => '23 Februari 2026',
-    'current_project_progress_label' => 'Progres',
+    'current_project_period_value' => 'Feb 2026 – Selesai',
 
     // Why Choose Us section
     'why_kicker' => 'Mengapa Memilih Kami',

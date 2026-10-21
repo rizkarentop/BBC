@@ -5,7 +5,6 @@ return [
     'section_title' => 'Rekam Jejak Pekerjaan yang Diselesaikan',
     'section_description' => 'Kumpulan proyek infrastruktur saluran transmisi, gardu induk, dan pembangkit listrik tenaga air yang diselesaikan untuk PT PLN (Persero) sejak 2008.',
 'contract_label' => 'Kontrak:',
-    'contract_date_label' => 'Tanggal Kontrak:',
     'period_label' => 'Periode:',
 'search_placeholder' => 'Cari proyek...',
     'search_no_results' => 'Tidak ada proyek yang cocok dengan pencarian Anda.',
@@ -17,7 +16,6 @@ return [
         [
             'tag' => 'Transmisi',
             'title' => 'Pekerjaan Pengadaan dan Pemasangan Tower dan Pondasi Tower (Seksi-B) T/L 275 kV Meulaboh – Sigli, 208 Km, 2CCT, Twin Zebra',
-            'description' => 'Pengadaan dan pemasangan menara transmisi serta pondasi menara untuk saluran transmisi 275 kV Meulaboh–Sigli (Seksi B), termasuk pekerjaan menara #208, #209, ZCCT, dan konduktor Twin Zebra di Aceh Barat.',
             'contract' => '021.PJ.PLN2008/131/PIKITRING SUAR/2008',
             'period' => 'Agu 2008 – Jun 2012',
             'image' => '',
@@ -25,7 +23,6 @@ return [
         [
             'tag' => 'Pembangkit Listrik',
             'title' => 'Pekerjaan Pembangunan Gardu Induk 150 kV Meulaboh (1×30 MVA) dan PLTU Meulaboh (Ext)',
-            'description' => 'Pembangunan gardu induk 150 kV Meulaboh, memperluas jaringan PLTU Meulaboh.',
             'contract' => '004.PJ.2011/133/INKTRING SUAR/2011',
             'period' => 'Des 2011 – Jan 2020',
             'image' => '',
@@ -33,7 +30,6 @@ return [
         [
             'tag' => 'Transmisi',
             'title' => 'Pekerjaan Pembangunan Transmisi 150 kV Tele – Pangururan',
-            'description' => '',
             'contract' => '020.PJ.2011/131/INKTRING SUAR/2011',
             'period' => 'Des 2011 – Des 2020',
             'image' => '',
@@ -41,7 +37,6 @@ return [
         [
             'tag' => 'Transmisi',
             'title' => 'Pekerjaan Pembangunan Transmisi 150 kV Meulaboh – Blang Pidie, 82,09 Km, 2 CCT, ACSR 1×240/20 MM2 (Section 1)',
-            'description' => 'Pembangunan Seksi 1 saluran transmisi 150 kV Meulaboh–Blang Pidie.',
             'contract' => '030.PJ.2011/131/INKTRING SUAR/2011',
             'period' => 'Des 2011 – Jan 2021',
             'image' => '',
@@ -49,7 +44,6 @@ return [
         [
             'tag' => 'Gardu Induk',
             'title' => 'Pekerjaan Pembangunan T/L 150 kV Ulee Kareng – Krueng Raya (Section 1) dan GI 150 kV Krueng Raya 30 MVA',
-            'description' => 'Pembangunan saluran transmisi beserta gardu induk baru 30 MVA di Krueng Raya.',
             'contract' => '085.PJ.PLN2017/DAN.02.02/UIP II/2017',
             'period' => 'Jun 2017 – Sep 2021',
             'image' => '',
@@ -57,7 +51,6 @@ return [
         [
             'tag' => 'Gardu Induk',
             'title' => 'Pekerjaan Pembangunan T/L 150 kV Ulee Kareng – Krueng Raya (Section 2) dan GI 150 kV Ulee Kareng Ext',
-            'description' => 'Pekerjaan transmisi Seksi 2 dan perluasan gardu induk Ulee Kareng.',
             'contract' => '086.PJ.PLN2017/DAN.02.02/UIP II/2017',
             'period' => 'Jun 2017 – Sep 2021',
             'image' => '',
@@ -65,7 +58,6 @@ return [
         [
             'tag' => 'Gardu Induk',
             'title' => 'Pekerjaan Pembangunan T/L 150 kV Blang Pidie – Tapak Tuan (Section 1) dan GI 150 kV Tapak Tuan 30 MVA',
-            'description' => 'Pembangunan saluran transmisi dan gardu induk baru 30 MVA di Tapak Tuan.',
             'contract' => '087.PJ.PLN2017/DAN.02.02/UIP II/2017',
             'period' => 'Jun 2017 – Mar 2024',
             'images' => [
@@ -76,7 +68,6 @@ return [
         [
             'tag' => 'Gardu Induk',
             'title' => 'Pekerjaan Sipil GITET 275 kV Ulee Kareng',
-            'description' => 'Pekerjaan konstruksi sipil untuk gardu induk tegangan ekstra tinggi 275 kV Ulee Kareng.',
             'contract' => '122.PJ.PLN2017/DAN.02.02/UIP II/2017',
             'period' => 'Jul 2017 – Feb 2022',
             'image' => 'images/projects_real/gitet-ulee-kareng.jpg',
@@ -84,7 +75,6 @@ return [
         [
             'tag' => 'Transmisi',
             'title' => 'Pembangunan T/L 275 kV Sigli – Ulee Kareng, 2CCT, 2 Zebra (Section 1)',
-            'description' => 'Seksi 1 saluran transmisi tegangan ekstra tinggi 275 kV dari Sigli ke Ulee Kareng — pemasangan menara, pondasi, dan pengelasan.',
             'contract' => '266.PJ.PLN2017/DAN.02.02/UIP SBU/2017',
             'period' => 'Des 2017 – Mar 2024',
             'image' => 'images/projects_real/tl275-sigli-ulee-kareng-section-1.jpeg',
@@ -92,7 +82,6 @@ return [
         [
             'tag' => 'Transmisi',
             'title' => 'Pembangunan T/L 275 kV Sigli – Ulee Kareng, 2CCT, 2 Zebra (Section 2)',
-            'description' => 'Seksi 2 saluran transmisi tegangan ekstra tinggi 275 kV — penarikan konduktor di Kabupaten Pidie.',
             'contract' => '267.PJ.PLN2017/DAN.02.02/UIP SBU/2017',
             'period' => 'Des 2017 – Mar 2024',
             'image' => 'images/projects_real/tl275-sigli-ulee-kareng-section-2.jpeg',
@@ -100,7 +89,6 @@ return [
         [
             'tag' => 'Transmisi',
             'title' => 'Pembangunan T/L 275 kV Sigli – Ulee Kareng, 2CCT, 2 Zebra (Section 3)',
-            'description' => 'Seksi 3 saluran transmisi tegangan ekstra tinggi 275 kV — pengelasan dan perakitan menara baja.',
             'contract' => '268.PJ.PLN2017/DAN.02.02/UIP SBU/2017',
             'period' => 'Des 2017 – Mar 2024',
             'image' => 'images/projects_real/tl275-sigli-ulee-kareng-section-3.jpeg',
@@ -108,7 +96,6 @@ return [
         [
             'tag' => 'Pembangkit Air',
             'title' => 'Pembangunan PLTA Kumbih-3 (3×15 MW) LOT 1A (Pembangunan Prasarana Basecamp)',
-            'description' => 'Pembangunan infrastruktur basecamp yang mendukung PLTA Kumbih-3.',
             'contract' => '008.PJ.PLN2022/DAN.01.02/C37000000/2022',
             'period' => 'Des 2022 – Feb 2025',
             'image' => 'images/projects_real/kumbih3-basecamp-1.jpg',
@@ -116,7 +103,6 @@ return [
 [
             'tag' => 'Pembangkit Air',
             'title' => 'Pekerjaan Perbaikan Access Road PLTA Asahan 3',
-            'description' => 'Rehabilitasi jalan akses yang melayani PLTA Asahan 3.',
             'contract' => '003.PJ.PLN2024/DAN.01.02/F37000000/2024',
             'period' => 'Agu 2024 – Feb 2026',
             'images' => [
@@ -127,9 +113,7 @@ return [
         [
             'tag' => 'Transmisi',
             'title' => 'Pekerjaan Keadaan Darurat (Emergency) T/L 150 kV Pangkalan Brandan – Langsa Pasca-Bencana Hidrometeorologi di Wilayah Provinsi Aceh & Sumatera Utara (Lingkup Pekerjaan Sipil)',
-            'description' => 'Pekerjaan keadaan darurat pasca-bencana hidrometeorologi untuk PT PLN (Persero) di wilayah Provinsi Aceh dan Sumatera Utara, dengan lingkup pekerjaan sipil.',
             'contract' => '013.PJ.PLN2026/DAN.01.03/F36000000/2026',
-            'contract_date' => '24 Agustus 2026',
             'period' => 'Feb 2026 – Selesai',
             'image' => 'images/projects_real/current-project.jpg',
         ],

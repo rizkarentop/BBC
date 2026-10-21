@@ -103,7 +103,7 @@
                 @endphp
                 <div class="project-card overflow-hidden rounded-2xl bg-white shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl"
                      data-tag="{{ $project['tag'] }}"
-                     data-search="{{ strtolower($project['title'] . ' ' . $project['tag'] . ' ' . $project['description'] . ' ' . $project['contract']) }}">
+                     data-search="{{ strtolower($project['title'] . ' ' . $project['tag'] . ' ' . $project['contract']) }}">
                     <div class="relative">
                         @if (!empty($project['images']))
                         <div class="grid h-56 grid-cols-2 gap-1">
@@ -142,23 +142,12 @@
                     </div>
 
                     <div class="p-5">
-                        <span class="text-sm font-semibold text-[#252AB8]">
-                            {{ $project['tag'] }}
-                        </span>
-
-                        <h3 class="mt-1.5 text-lg font-bold leading-snug text-slate-900">
+                        <h3 class="text-lg font-bold leading-snug text-slate-900">
                             {{ $project['title'] }}
                         </h3>
 
-                        <p class="mt-2 text-sm text-slate-600">
-                            {{ $project['description'] }}
-                        </p>
-
                         <div class="mt-3 space-y-1 border-t border-slate-100 pt-3 text-xs text-slate-500">
                             <p><span class="font-medium text-slate-600">{{ __('projects_page.contract_label') }}</span> {{ $project['contract'] }}</p>
-                            @if (!empty($project['contract_date']))
-                            <p><span class="font-medium text-slate-600">{{ __('projects_page.contract_date_label') }}</span> {{ $project['contract_date'] }}</p>
-                            @endif
                             <p><span class="font-medium text-slate-600">{{ __('projects_page.period_label') }}</span> {{ $project['period'] }}</p>
                         </div>
                     </div>

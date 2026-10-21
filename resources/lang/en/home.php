@@ -42,18 +42,8 @@ return [
     'overview_button_contact_us' => 'Contact Us',
 
 // Current Project section
-    'current_project_kicker' => 'Completed Project',
-    'current_project_heading' => 'Work We Completed to Keep the Grid Running',
-    'current_project_heading_description' => 'A look at the transmission infrastructure project completed for PT PLN (Persero), reflecting our commitment to quality and on-time execution.',
-    'current_project_badge' => 'Project Completed',
     'current_project_title' => 'Pekerjaan Keadaan Darurat (Emergency) T/L 150 kV Pangkalan Brandan – Langsa Pasca-Bencana Hidrometeorologi di Wilayah Provinsi Aceh & Sumatera Utara (Lingkup Pekerjaan Sipil)',
-    'current_project_description' => 'Post-hydrometeorological-disaster emergency works for PT PLN (Persero) in Aceh and North Sumatra provinces, covering the civil works scope.',
-    'current_project_spmk_label' => 'Contract No.',
-    'current_project_contract_date_label' => 'Contract Date',
-    'current_project_contract_date_value' => '24 August 2026',
-    'current_project_started_label' => 'Started',
-    'current_project_started_value' => '23 February 2026',
-    'current_project_progress_label' => 'Progress',
+    'current_project_period_value' => 'Feb 2026 – Completed',
 
     // Why Choose Us section
     'why_kicker' => 'Why Choose Us',
