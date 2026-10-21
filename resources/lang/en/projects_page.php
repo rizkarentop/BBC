@@ -105,10 +105,7 @@ return [
             'title' => 'Pekerjaan Perbaikan Access Road PLTA Asahan 3',
             'contract' => '003.PJ.PLN2024/DAN.01.02/F37000000/2024',
             'period' => 'Aug 2024 – Feb 2026',
-            'images' => [
-                'images/projects_real/asahan3-access-road-1.jpeg',
-                'images/projects_real/asahan3-access-road-2.jpeg',
-            ],
+            'image' => 'images/projects_real/asahan3-access-road-1.jpeg',
         ],
         [
             'tag' => 'Transmission',
