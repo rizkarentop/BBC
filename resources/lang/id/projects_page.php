@@ -3,7 +3,7 @@
 return [
     'section_kicker' => 'Pengalaman Proyek',
     'section_title' => 'Rekam Jejak Pekerjaan yang Diselesaikan',
-    'section_description' => 'Kumpulan proyek infrastruktur saluran transmisi, gardu induk, dan pembangkit listrik tenaga air yang diselesaikan untuk PT PLN (Persero) sejak 2008.',
+    'section_description' => 'Kumpulan proyek yang dikerjakan oleh PT Bugak Brawang Cemerlang.',
 'contract_label' => 'Kontrak:',
     'period_label' => 'Periode:',
 'search_placeholder' => 'Cari proyek...',

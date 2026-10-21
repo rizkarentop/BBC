@@ -3,7 +3,7 @@
 return [
     'section_kicker' => 'Project Experience',
     'section_title' => 'Track Record of Delivered Works',
-    'section_description' => 'A selection of transmission line, substation, and hydropower infrastructure projects completed for PT PLN (Persero) since 2008.',
+    'section_description' => 'A collection of projects carried out by PT Bugak Brawang Cemerlang.',
 'contract_label' => 'Contract:',
     'period_label' => 'Period:',
 'search_placeholder' => 'Search projects...',
