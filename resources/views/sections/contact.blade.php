@@ -59,12 +59,12 @@
 
                 <div class="contact-map h-100">
                     <iframe
-                        src="https://maps.google.com/maps?q=4.8936013,97.5658276&z=16&output=embed"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837095.9262459043!2d95.99462044687499!3d5.174778599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3047833a95a81563%3A0x6b99b3be65f33cb6!2sPT.%20BBC!5e1!3m2!1sen!2sid!4v1792572311528!5m2!1sen!2sid"
                         width="100%"
                         height="100%"
                         style="border:0; min-height:420px;"
                         loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
+                        referrerpolicy="strict-origin-when-cross-origin">
                     </iframe>
                 </div>
 
