@@ -51,7 +51,7 @@ jobs:
           username: ${{ secrets.HOSTINGER_USER }}
           key: ${{ secrets.HOSTINGER_SSH_KEY }}
           port: ${{ secrets.HOSTINGER_PORT }}
-          source: "resources/lang/en/home.php,resources/lang/en/projects_page.php"
+          source: "resources/lang/en/home.php,resources/lang/en/projects_page.php,resources/lang/en/about.php"
           target: "domains/bugakbrawangcemerlang.com/public_html/resources/lang/en/"
           strip_components: 3
           overwrite: true
@@ -63,7 +63,7 @@ jobs:
           username: ${{ secrets.HOSTINGER_USER }}
           key: ${{ secrets.HOSTINGER_SSH_KEY }}
           port: ${{ secrets.HOSTINGER_PORT }}
-          source: "resources/lang/id/home.php,resources/lang/id/projects_page.php"
+          source: "resources/lang/id/home.php,resources/lang/id/projects_page.php,resources/lang/id/about.php"
           target: "domains/bugakbrawangcemerlang.com/public_html/resources/lang/id/"
           strip_components: 3
           overwrite: true
@@ -88,6 +88,18 @@ jobs:
           key: ${{ secrets.HOSTINGER_SSH_KEY }}
           port: ${{ secrets.HOSTINGER_PORT }}
           source: "resources/views/sections/current-project.blade.php"
+          target: "domains/bugakbrawangcemerlang.com/public_html/resources/views/sections/"
+          strip_components: 3
+          overwrite: true
+
+      - name: Deploy Organization section
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          source: "resources/views/sections/about/organization.blade.php"
           target: "domains/bugakbrawangcemerlang.com/public_html/resources/views/sections/"
           strip_components: 3
           overwrite: true
