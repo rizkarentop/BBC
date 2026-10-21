@@ -48,6 +48,8 @@ return [
     'org_role_manager_keuangan' => 'Manager Keuangan',
     'org_role_manager_marketing' => 'Manager Marketing',
     'org_role_manager_operasional' => 'Manager Operasional',
+    'org_manager_level' => 'Tim Manajemen',
+    'org_team_label' => 'Anggota tim',
 
     // Leadership section
     'leadership_kicker' => 'Kepemimpinan dalam Aksi',

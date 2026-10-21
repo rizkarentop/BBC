@@ -48,6 +48,8 @@ return [
     'org_role_manager_keuangan' => 'Finance Manager',
     'org_role_manager_marketing' => 'Marketing Manager',
     'org_role_manager_operasional' => 'Operations Manager',
+    'org_manager_level' => 'Management Teams',
+    'org_team_label' => 'Team members',
 
     // Leadership section
     'leadership_kicker' => 'Leadership in Action',
