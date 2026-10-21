@@ -1,11 +1,7 @@
-<section class="relative isolate overflow-hidden bg-slate-50 py-20 sm:py-24">
-    <div class="pointer-events-none absolute -left-32 top-16 h-72 w-72 rounded-full bg-blue-100/70 blur-3xl"></div>
-    <div class="pointer-events-none absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-indigo-100/70 blur-3xl"></div>
-
-    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+<section class="bg-slate-50 py-20 sm:py-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-3xl text-center">
-            <span class="inline-flex items-center gap-2 rounded-full border border-[#252AB8]/10 bg-white px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-[#252AB8] shadow-sm">
-                <span class="h-2 w-2 rounded-full bg-[#252AB8]"></span>
+            <span class="text-sm font-semibold uppercase tracking-[0.3em] text-[#252AB8]">
                 {{ __('about.org_kicker') }}
             </span>
 
