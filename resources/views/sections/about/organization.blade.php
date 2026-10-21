@@ -23,9 +23,9 @@
                     ['title' => __('about.org_role_direktur_utama'), 'name' => 'Sayed Khairuzzaman'],
                 ];
 
-                $director = [
-                    'title' => __('about.org_role_direktur'),
-                    'name' => 'Sayed Khazavie Filma KZ Subki, SE',
+                $directors = [
+                    ['title' => __('about.org_role_direktur'), 'name' => 'Sayed Khazavie Filma KZ'],
+                    ['title' => __('about.org_role_direktur'), 'name' => 'Subki, SE'],
                 ];
 
                 // Anak buah ditempatkan di bawah manager masing-masing.
@@ -76,18 +76,20 @@
             <div class="mx-auto h-6 w-px bg-slate-300"></div>
 
             <!-- Direktur -->
-            <div class="flex justify-center">
-                <div class="w-full rounded-2xl border-2 border-[#252AB8]/30 bg-white px-6 py-5 shadow-md md:w-80">
-                    <p class="text-xs font-semibold uppercase tracking-widest text-[#252AB8]">
-                        {{ $director['title'] }}
-                    </p>
-                    <p class="mt-1 text-base font-bold text-slate-900">
-                        {{ $director['name'] }}
-                    </p>
+            @foreach ($directors as $director)
+                <div class="flex justify-center">
+                    <div class="w-full rounded-2xl border-2 border-[#252AB8]/30 bg-white px-6 py-5 shadow-md md:w-80">
+                        <p class="text-xs font-semibold uppercase tracking-widest text-[#252AB8]">
+                            {{ $director['title'] }}
+                        </p>
+                        <p class="mt-1 text-base font-bold text-slate-900">
+                            {{ $director['name'] }}
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="mx-auto h-6 w-px bg-slate-300"></div>
+                <div class="mx-auto h-6 w-px bg-slate-300"></div>
+            @endforeach
 
             <!-- Managers (dengan anak buah di bawahnya) -->
             <div class="flex flex-col items-center justify-center gap-6 md:flex-row md:flex-wrap">
@@ -121,4 +123,3 @@
     </div>
 
 </section>
-
