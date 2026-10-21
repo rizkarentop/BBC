@@ -115,9 +115,26 @@ jobs:
           key: ${{ secrets.HOSTINGER_SSH_KEY }}
           port: ${{ secrets.HOSTINGER_PORT }}
           source: "public/build/**"
-          target: "domains/bugakbrawangcemerlang.com/public_html/"
+          target: "domains/bugakbrawangcemerlang.com/public_html/public/"
           strip_components: 1
           overwrite: true
+
+      - name: Verify deployed organization styles
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.HOSTINGER_HOST }}
+          username: ${{ secrets.HOSTINGER_USER }}
+          key: ${{ secrets.HOSTINGER_SSH_KEY }}
+          port: ${{ secrets.HOSTINGER_PORT }}
+          script: |
+            cd "$HOME/domains/bugakbrawangcemerlang.com/public_html"
+            CSS_FILE=$(php -r '$manifest = json_decode(file_get_contents("public/build/manifest.json"), true); echo $manifest["resources/css/app.css"]["file"] ?? "";')
+            test -n "$CSS_FILE"
+            CSS="public/build/$CSS_FILE"
+            test -s "$CSS"
+            grep -Fq '.max-w-xs{' "$CSS"
+            grep -Fq '.max-w-md{' "$CSS"
+            grep -Fq '.border-slate-200\/80{' "$CSS"
 
       - name: Clear compiled Laravel views
         uses: appleboy/ssh-action@v1.2.0
