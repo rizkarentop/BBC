@@ -103,7 +103,7 @@
 
                     <p class="flex items-start gap-3">
                         <i class="bi bi-envelope-fill mt-1 text-blue-400"></i>
-                        <a href="mailto:bugak_brawang@yahoo.co.id" class="transition hover:text-blue-400">
+                        <a href="mailto:bugak_brawang@yahoo.co.id?subject=Message%20from%20PT.%20BBC%20Website" class="transition hover:text-blue-400">
                             bugak_brawang@yahoo.co.id
                         </a>
                     </p>

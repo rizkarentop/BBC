@@ -71,7 +71,7 @@
                 </div>
                 <h3 class="text-lg font-semibold text-slate-900">{{ __('contact.cards.email') }}</h3>
                 <p class="mt-2 text-sm text-slate-600">
-                    <a href="mailto:bugak_brawang@yahoo.co.id" class="hover:text-[#252AB8]">bugak_brawang@yahoo.co.id</a>
+                    <a href="mailto:bugak_brawang@yahoo.co.id?subject=Message%20from%20PT.%20BBC%20Website" class="hover:text-[#252AB8]">bugak_brawang@yahoo.co.id</a>
                 </p>
             </div>
 
@@ -209,7 +209,7 @@
         event.preventDefault();
 
         const formData = new FormData(event.currentTarget);
-        const subject = formData.get('subject');
+        const subject = `Message from PT. BBC Website - ${formData.get('subject')}`;
         const body = [
             `Nama: ${formData.get('name')}`,
             `Email: ${formData.get('email')}`,
