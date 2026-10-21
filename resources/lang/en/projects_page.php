@@ -68,7 +68,10 @@ return [
             'description' => 'Transmission line construction and a new 30 MVA substation at Tapak Tuan.',
             'contract' => '087.PJ.PLN2017/DAN.02.02/UIP II/2017',
             'period' => 'Jun 2017 – Mar 2024',
-            'image' => '',
+            'images' => [
+                'images/projects_real/blang-pidie-tapak-tuan-gi.jpeg',
+                'images/projects_real/blang-pidie-tapak-tuan-transmisi.jpeg',
+            ],
         ],
         [
             'tag' => 'Substation',
@@ -84,7 +87,7 @@ return [
             'description' => 'Section 1 of the 275 kV extra-high voltage transmission line from Sigli to Ulee Kareng — tower erection, foundation, and welding works.',
             'contract' => '266.PJ.PLN2017/DAN.02.02/UIP SBU/2017',
             'period' => 'Dec 2017 – Mar 2024',
-            'image' => 'images/projects_real/tl275-erection-1.jpg',
+            'image' => 'images/projects_real/tl275-sigli-ulee-kareng-section-1.jpeg',
         ],
         [
             'tag' => 'Transmission',
@@ -92,7 +95,7 @@ return [
             'description' => 'Section 2 of the 275 kV extra-high voltage transmission line — conductor stringing across Pidie Regency.',
             'contract' => '267.PJ.PLN2017/DAN.02.02/UIP SBU/2017',
             'period' => 'Dec 2017 – Mar 2024',
-            'image' => '',
+            'image' => 'images/projects_real/tl275-sigli-ulee-kareng-section-2.jpeg',
         ],
         [
             'tag' => 'Transmission',
@@ -100,7 +103,7 @@ return [
             'description' => 'Section 3 of the 275 kV extra-high voltage transmission line — steel tower welding and assembly.',
             'contract' => '268.PJ.PLN2017/DAN.02.02/UIP SBU/2017',
             'period' => 'Dec 2017 – Mar 2024',
-            'image' => '',
+            'image' => 'images/projects_real/tl275-sigli-ulee-kareng-section-3.jpeg',
         ],
         [
             'tag' => 'Hydropower',
@@ -116,7 +119,10 @@ return [
             'description' => 'Rehabilitation of access roads serving the Asahan 3 hydroelectric power plant.',
             'contract' => '003.PJ.PLN2024/DAN.01.02/F37000000/2024',
             'period' => 'Aug 2024 – Feb 2026',
-            'image' => 'images/projects_real/asahan3-road.jpg',
+            'images' => [
+                'images/projects_real/asahan3-access-road-1.jpeg',
+                'images/projects_real/asahan3-access-road-2.jpeg',
+            ],
         ],
         [
             'tag' => 'Transmission',

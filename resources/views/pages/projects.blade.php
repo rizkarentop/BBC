@@ -105,7 +105,15 @@
                      data-tag="{{ $project['tag'] }}"
                      data-search="{{ strtolower($project['title'] . ' ' . $project['tag'] . ' ' . $project['description'] . ' ' . $project['contract']) }}">
                     <div class="relative">
-                        @if (!empty($project['image']))
+                        @if (!empty($project['images']))
+                        <div class="grid h-56 grid-cols-2 gap-1">
+                            @foreach ($project['images'] as $image)
+                            <img src="{{ asset($image) }}"
+                                 alt="{{ $project['title'] }} - photo {{ $loop->iteration }}"
+                                 class="h-full w-full object-cover">
+                            @endforeach
+                        </div>
+                        @elseif (!empty($project['image']))
                         <img src="{{ asset($project['image']) }}"
                              alt="{{ $project['title'] }}"
                              class="h-56 w-full object-cover">

@@ -68,7 +68,10 @@ return [
             'description' => 'Pembangunan saluran transmisi dan gardu induk baru 30 MVA di Tapak Tuan.',
             'contract' => '087.PJ.PLN2017/DAN.02.02/UIP II/2017',
             'period' => 'Jun 2017 – Mar 2024',
-            'image' => '',
+            'images' => [
+                'images/projects_real/blang-pidie-tapak-tuan-gi.jpeg',
+                'images/projects_real/blang-pidie-tapak-tuan-transmisi.jpeg',
+            ],
         ],
         [
             'tag' => 'Gardu Induk',
@@ -84,7 +87,7 @@ return [
             'description' => 'Seksi 1 saluran transmisi tegangan ekstra tinggi 275 kV dari Sigli ke Ulee Kareng — pemasangan menara, pondasi, dan pengelasan.',
             'contract' => '266.PJ.PLN2017/DAN.02.02/UIP SBU/2017',
             'period' => 'Des 2017 – Mar 2024',
-            'image' => 'images/projects_real/tl275-erection-1.jpg',
+            'image' => 'images/projects_real/tl275-sigli-ulee-kareng-section-1.jpeg',
         ],
         [
             'tag' => 'Transmisi',
@@ -92,7 +95,7 @@ return [
             'description' => 'Seksi 2 saluran transmisi tegangan ekstra tinggi 275 kV — penarikan konduktor di Kabupaten Pidie.',
             'contract' => '267.PJ.PLN2017/DAN.02.02/UIP SBU/2017',
             'period' => 'Des 2017 – Mar 2024',
-            'image' => '',
+            'image' => 'images/projects_real/tl275-sigli-ulee-kareng-section-2.jpeg',
         ],
         [
             'tag' => 'Transmisi',
@@ -100,7 +103,7 @@ return [
             'description' => 'Seksi 3 saluran transmisi tegangan ekstra tinggi 275 kV — pengelasan dan perakitan menara baja.',
             'contract' => '268.PJ.PLN2017/DAN.02.02/UIP SBU/2017',
             'period' => 'Des 2017 – Mar 2024',
-            'image' => '',
+            'image' => 'images/projects_real/tl275-sigli-ulee-kareng-section-3.jpeg',
         ],
         [
             'tag' => 'Pembangkit Air',
@@ -116,7 +119,10 @@ return [
             'description' => 'Rehabilitasi jalan akses yang melayani PLTA Asahan 3.',
             'contract' => '003.PJ.PLN2024/DAN.01.02/F37000000/2024',
             'period' => 'Agu 2024 – Feb 2026',
-            'image' => 'images/projects_real/asahan3-road.jpg',
+            'images' => [
+                'images/projects_real/asahan3-access-road-1.jpeg',
+                'images/projects_real/asahan3-access-road-2.jpeg',
+            ],
         ],
         [
             'tag' => 'Transmisi',

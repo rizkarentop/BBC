@@ -23,7 +23,7 @@
 
             <!-- Card -->
             <div class="overflow-hidden rounded-2xl bg-white shadow-lg transition duration-300 hover:-translate-y-2 border border-slate-200">
-                <img src="{{ asset('images/projects_real/tl275-erection-1.jpg') }}"
+                <img src="{{ asset('images/projects_real/tl275-sigli-ulee-kareng-section-1.jpeg') }}"
                      alt="275 kV transmission tower erection, Sigli – Ulee Kareng"
                      class="h-64 w-full object-cover">
 
